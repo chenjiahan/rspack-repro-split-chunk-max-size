@@ -29,6 +29,13 @@ const config = {
   experiments: {
     css: true,
   },
+  optimization: {
+    minimize: false,
+    splitChunks: {
+      chunks: "all",
+      maxSize: 100000,
+    },
+  },
 };
 
 export default config;
